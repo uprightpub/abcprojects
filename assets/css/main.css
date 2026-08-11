@@ -342,17 +342,57 @@ p {
 
 
 /* =========================================================
-   TEMPORARY HOMEPAGE
+   GLOBAL SECTION STYLES
    ========================================================= */
 
-.home-intro {
-
-  min-height: calc(100vh - 82px);
-
-  display: flex;
-  align-items: center;
-
+.section {
   padding: 90px 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.86rem;
+  font-weight: 700;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin-bottom: 18px;
+}
+
+.section-heading p {
+  margin-bottom: 0;
+
+  color: var(--muted);
+
+  font-size: 1.12rem;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+
+  padding: 90px 0 85px;
 
   background:
     linear-gradient(
@@ -364,14 +404,29 @@ p {
 }
 
 
-.home-intro-content {
-  max-width: 800px;
+.hero-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(420px, 0.95fr);
+
+  align-items: center;
+
+  gap: 55px;
+
 }
 
 
-.home-eyebrow {
+.hero-content {
+  max-width: 700px;
+}
 
-  margin-bottom: 16px;
+
+.hero-eyebrow {
+
+  margin-bottom: 18px;
 
   color: var(--gold);
 
@@ -383,20 +438,29 @@ p {
   font-size: 0.9rem;
   font-weight: 700;
 
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 
 }
 
 
-.home-intro h1 {
+.hero h1 {
+
   margin-bottom: 24px;
+
+  font-size:
+    clamp(
+      2.7rem,
+      5vw,
+      4.4rem
+    );
+
 }
 
 
-.home-intro-text {
+.hero-text {
 
-  max-width: 720px;
+  max-width: 680px;
 
   margin-bottom: 34px;
 
@@ -406,6 +470,29 @@ p {
 
 }
 
+
+.hero-visual {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.hero-visual img {
+
+  width: 100%;
+  max-width: 610px;
+
+  object-fit: contain;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
 
 .button-group {
 
@@ -439,7 +526,8 @@ p {
 
   transition:
     transform 0.2s ease,
-    background 0.2s ease;
+    background 0.2s ease,
+    color 0.2s ease;
 
 }
 
@@ -474,6 +562,347 @@ p {
   background: var(--white);
 
   border: 1px solid var(--navy);
+
+}
+
+
+.button-secondary:hover {
+
+  color: var(--white);
+
+  background: var(--navy);
+
+}
+
+
+/* =========================================================
+   TRUST BAR
+   ========================================================= */
+
+.trust-bar {
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  background: var(--white);
+
+}
+
+
+.trust-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+}
+
+
+.trust-item {
+
+  padding: 28px 24px;
+
+  border-right:
+    1px solid var(--border);
+
+}
+
+
+.trust-item:last-child {
+  border-right: 0;
+}
+
+
+.trust-item strong {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--navy);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.94rem;
+
+}
+
+
+.trust-item span {
+
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.45;
+
+}
+
+
+/* =========================================================
+   WHO WE SUPPORT
+   ========================================================= */
+
+.who-we-support {
+  background: var(--off-white);
+}
+
+
+.support-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 20px;
+
+}
+
+
+.support-card {
+
+  min-height: 270px;
+
+  padding: 28px 24px;
+
+  background: var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    var(--radius-md);
+
+  box-shadow:
+    var(--shadow-sm);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+}
+
+
+.support-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    var(--shadow-md);
+
+}
+
+
+.support-icon {
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  color: var(--white);
+
+  background: var(--navy);
+
+  border-radius: 50%;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+}
+
+
+.support-card h3 {
+  margin-bottom: 12px;
+}
+
+
+.support-card p {
+
+  margin-bottom: 0;
+
+  color: var(--muted);
+
+  font-size: 0.98rem;
+
+}
+
+
+/* =========================================================
+   HOMEPAGE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .hero-grid {
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(340px, 0.8fr);
+
+    gap: 35px;
+
+  }
+
+
+  .support-grid {
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .hero {
+
+    padding:
+      70px 0;
+
+  }
+
+
+  .hero-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .hero-content {
+    max-width: none;
+  }
+
+
+  .hero-visual {
+
+    max-width: 650px;
+
+    margin:
+      15px auto 0;
+
+  }
+
+
+  .trust-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .trust-item:nth-child(2) {
+    border-right: 0;
+  }
+
+
+  .trust-item:nth-child(-n+2) {
+    border-bottom:
+      1px solid var(--border);
+  }
+
+
+  .support-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 640px) {
+
+  .section {
+    padding: 65px 0;
+  }
+
+
+  .hero {
+
+    padding:
+      60px 0;
+
+  }
+
+
+  .hero h1 {
+
+    font-size:
+      clamp(
+        2.25rem,
+        12vw,
+        3.2rem
+      );
+
+  }
+
+
+  .hero-text {
+    font-size: 1.08rem;
+  }
+
+
+  .button-group {
+    flex-direction: column;
+  }
+
+
+  .button {
+    width: 100%;
+  }
+
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .trust-item {
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid var(--border);
+
+  }
+
+
+  .trust-item:last-child {
+    border-bottom: 0;
+  }
+
+
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .support-card {
+    min-height: auto;
+  }
 
 }
 
