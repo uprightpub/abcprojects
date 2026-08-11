@@ -1,0 +1,16 @@
+title: "ABC Projects"
+tagline: "Research Profile & Evidence Support"
+description: "ABC Projects provides research profile development, scholarly visibility, publication support, research impact, peer-review evidence, and professional evidence documentation."
+
+# Development URL
+# We will change these when abcprojects.org is connected.
+url: "https://uprightpub.github.io"
+baseurl: "/abcprojects"
+
+lang: "en"
+timezone: "Asia/Dhaka"
+
+markdown: kramdown
+
+exclude:
+  - README.md
