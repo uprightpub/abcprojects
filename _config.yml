@@ -4,8 +4,8 @@ description: "ABC Projects provides research profile development, scholarly visi
 
 # Development URL
 # We will change these when abcprojects.org is connected.
-url: "https://uprightpub.github.io"
-baseurl: "/abcprojects"
+url: "https://abcprojects.org"
+baseurl: ""
 
 lang: "en"
 timezone: "Asia/Dhaka"
