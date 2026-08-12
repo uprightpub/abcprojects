@@ -1,0 +1,1197 @@
+/* =========================================================
+   ABC PROJECTS
+   IMMIGRATION SUPPORT PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.immigration-hero {
+  padding: 92px 0 88px;
+
+  background:
+    radial-gradient(
+      circle at 86% 22%,
+      rgba(198, 161, 91, 0.15),
+      transparent 26%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f4f8fb 58%,
+      #edf3f7 100%
+    );
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+
+.immigration-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.12fr)
+    minmax(350px, 0.68fr);
+
+  align-items: center;
+
+  gap: 72px;
+}
+
+
+.immigration-hero-content {
+  max-width: 780px;
+}
+
+
+.immigration-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.86rem;
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+.immigration-hero h1 {
+  max-width: 820px;
+
+  margin-bottom: 24px;
+
+  font-size:
+    clamp(
+      2.6rem,
+      5vw,
+      4.15rem
+    );
+}
+
+
+.immigration-hero-text {
+  max-width: 740px;
+
+  margin-bottom: 32px;
+
+  color: var(--muted);
+
+  font-size: 1.16rem;
+  line-height: 1.75;
+}
+
+
+.immigration-hero-note {
+  max-width: 700px;
+
+  margin-top: 22px;
+  margin-bottom: 0;
+
+  color: #718096;
+
+  font-size: 0.9rem;
+}
+
+
+/* HERO PANEL */
+
+.immigration-hero-panel {
+  padding: 34px 32px;
+
+  background:
+    rgba(255, 255, 255, 0.93);
+
+  border:
+    1px solid
+    rgba(23, 50, 77, 0.12);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 48px
+    rgba(15, 35, 55, 0.10);
+}
+
+
+.immigration-panel-label {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+
+.immigration-panel-item {
+  display: flex;
+  align-items: center;
+
+  gap: 17px;
+
+  padding: 18px 0;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+
+.immigration-panel-item:last-child {
+  border-bottom: 0;
+}
+
+
+.immigration-panel-item > span {
+  flex: 0 0 43px;
+
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+
+  background: var(--navy);
+
+  border-radius: 50%;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+
+.immigration-panel-item strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: var(--navy);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.96rem;
+}
+
+
+.immigration-panel-item small {
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   SHARED HEADING
+   ========================================================= */
+
+.immigration-section-heading {
+  max-width: 820px;
+}
+
+
+/* =========================================================
+   THREE PATHWAYS
+   ========================================================= */
+
+.immigration-pathways {
+  background:
+    var(--white);
+}
+
+
+.immigration-pathway-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+.immigration-pathway-card {
+  position: relative;
+
+  min-height: 330px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 27px;
+
+  border:
+    1px solid var(--border);
+
+  border-top-width: 5px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 6px 20px
+    rgba(15, 35, 55, 0.055);
+
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+
+.immigration-pathway-card:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 18px 38px
+    rgba(15, 35, 55, 0.14);
+}
+
+
+.pathway-eb1a {
+  border-top-color:
+    #315c83;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f1f7fb 0%,
+      #ffffff 50%
+    );
+}
+
+
+.pathway-niw {
+  border-top-color:
+    var(--gold);
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbf6ea 0%,
+      #ffffff 50%
+    );
+}
+
+
+.pathway-o1 {
+  border-top-color:
+    #688578;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f0f6f2 0%,
+      #ffffff 50%
+    );
+}
+
+
+.immigration-pathway-code {
+  display: inline-block;
+
+  margin-bottom: 24px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+}
+
+
+.immigration-pathway-card h3 {
+  margin-bottom: 14px;
+}
+
+
+.immigration-pathway-card p {
+  margin-bottom: 24px;
+
+  color: var(--muted);
+
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+
+
+.immigration-pathway-card a {
+  margin-top: auto;
+
+  color: var(--navy);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.immigration-pathway-card:hover a {
+  color: var(--gold);
+
+  transform:
+    translateX(4px);
+}
+
+
+/* =========================================================
+   EVIDENCE MATTERS
+   ========================================================= */
+
+.evidence-matters {
+  background:
+    #f6f8fa;
+}
+
+
+.evidence-matters-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+.evidence-matter-card {
+  min-height: 225px;
+
+  padding: 25px 23px;
+
+  background:
+    var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 16px
+    rgba(15, 35, 55, 0.045);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.evidence-matter-card:hover {
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(198, 161, 91, 0.6);
+
+  box-shadow:
+    0 14px 30px
+    rgba(15, 35, 55, 0.10);
+}
+
+
+.evidence-matter-card > span {
+  display: block;
+
+  margin-bottom: 24px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+
+.evidence-matter-card h3 {
+  margin-bottom: 12px;
+}
+
+
+.evidence-matter-card p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.immigration-process {
+  background:
+    #edf4f8;
+}
+
+
+.immigration-process-track {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.immigration-process-step {
+  min-height: 165px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 23px 19px;
+
+  text-align: center;
+
+  background:
+    var(--white);
+
+  border:
+    1px solid
+    rgba(23, 50, 77, 0.12);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 6px 18px
+    rgba(15, 35, 55, 0.05);
+
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+
+.immigration-process-step:hover {
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(198, 161, 91, 0.7);
+
+  box-shadow:
+    0 16px 32px
+    rgba(15, 35, 55, 0.13);
+}
+
+
+.immigration-process-final {
+  border-color:
+    rgba(198, 161, 91, 0.58);
+}
+
+
+.immigration-process-step > span {
+  display: block;
+
+  margin-bottom: 17px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+
+.immigration-process-step strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--navy);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.95rem;
+}
+
+
+.immigration-process-step small {
+  color: var(--muted);
+
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+
+.immigration-process-arrow {
+  color: var(--navy);
+
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   PATHWAY COMPARISON
+   ========================================================= */
+
+.pathway-comparison {
+  background:
+    var(--white);
+}
+
+
+.comparison-table-wrap {
+  overflow-x: auto;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 24px
+    rgba(15, 35, 55, 0.06);
+}
+
+
+.comparison-table {
+  min-width: 760px;
+
+  background:
+    var(--white);
+}
+
+
+.comparison-row {
+  display: grid;
+
+  grid-template-columns:
+    1.65fr
+    repeat(3, 1fr);
+
+  align-items: center;
+}
+
+
+.comparison-row > div {
+  padding: 17px 20px;
+
+  border-right:
+    1px solid var(--border);
+
+  border-bottom:
+    1px solid var(--border);
+
+  color: var(--muted);
+
+  font-size: 0.91rem;
+}
+
+
+.comparison-row > div:last-child {
+  border-right: 0;
+}
+
+
+.comparison-row:last-child > div {
+  border-bottom: 0;
+}
+
+
+.comparison-row > div:first-child {
+  color: var(--navy);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-weight: 600;
+}
+
+
+.comparison-header {
+  background:
+    var(--deep-navy);
+}
+
+
+.comparison-header > div {
+  color:
+    var(--white);
+
+  border-color:
+    rgba(255, 255, 255, 0.12);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-weight: 700;
+}
+
+
+.comparison-note {
+  margin-top: 18px;
+  margin-bottom: 0;
+
+  color: var(--muted);
+
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   WORKING WITH COUNSEL
+   ========================================================= */
+
+.counsel-section {
+  background:
+    linear-gradient(
+      125deg,
+      #fbf7ed 0%,
+      #ffffff 60%
+    );
+}
+
+
+.counsel-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.78fr)
+    minmax(500px, 1.22fr);
+
+  align-items: start;
+
+  gap: 70px;
+}
+
+
+.counsel-content h2 {
+  margin-bottom: 20px;
+}
+
+
+.counsel-content p {
+  color: var(--muted);
+
+  font-size: 1.02rem;
+}
+
+
+.counsel-role-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+.counsel-role-card {
+  min-height: 330px;
+
+  padding: 28px 25px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 6px 20px
+    rgba(15, 35, 55, 0.05);
+}
+
+
+.counsel-role-abc {
+  background:
+    #f4f8fb;
+
+  border-top:
+    5px solid #315c83;
+}
+
+
+.counsel-role-legal {
+  background:
+    #fbf7ee;
+
+  border-top:
+    5px solid var(--gold);
+}
+
+
+.counsel-role-card > span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+
+.counsel-role-card h3 {
+  margin-bottom: 18px;
+}
+
+
+.counsel-role-card ul {
+  margin: 0;
+
+  padding-left: 20px;
+
+  color: var(--muted);
+}
+
+
+.counsel-role-card li {
+  margin-bottom: 8px;
+
+  font-size: 0.91rem;
+}
+
+
+/* =========================================================
+   PROFESSIONAL BOUNDARIES
+   ========================================================= */
+
+.immigration-boundaries {
+  background:
+    #edf1f4;
+}
+
+
+.immigration-boundary-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.75fr)
+    minmax(450px, 1.25fr);
+
+  align-items: start;
+
+  gap: 75px;
+}
+
+
+.immigration-boundary-heading h2 {
+  margin-bottom: 18px;
+}
+
+
+.immigration-boundary-heading p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 1.03rem;
+}
+
+
+.immigration-boundary-list {
+  background:
+    var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+
+.immigration-boundary-item {
+  display: grid;
+
+  grid-template-columns:
+    42px 1fr;
+
+  gap: 15px;
+
+  padding: 20px 22px;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+
+.immigration-boundary-item:last-child {
+  border-bottom: 0;
+}
+
+
+.immigration-boundary-item span {
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+
+.immigration-boundary-item p {
+  margin: 0;
+
+  color: var(--charcoal);
+
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.immigration-final-cta {
+  padding: 80px 0;
+
+  color: var(--white);
+
+  background:
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(198, 161, 91, 0.18),
+      transparent 27%
+    ),
+    var(--deep-navy);
+}
+
+
+.immigration-cta-inner {
+  max-width: 860px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.immigration-cta-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+
+.immigration-cta-inner h2 {
+  margin-bottom: 18px;
+
+  color: var(--white);
+}
+
+
+.immigration-cta-inner > p {
+  max-width: 720px;
+
+  margin:
+    0 auto
+    30px;
+
+  color: #bac8d5;
+
+  font-size: 1.05rem;
+}
+
+
+.immigration-cta-buttons {
+  justify-content: center;
+}
+
+
+.immigration-cta-primary {
+  color: var(--deep-navy);
+
+  background: var(--gold);
+}
+
+
+.immigration-cta-primary:hover {
+  color: var(--deep-navy);
+
+  background: #d4b574;
+}
+
+
+.immigration-cta-secondary {
+  color: var(--white);
+
+  background: transparent;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.55);
+}
+
+
+.immigration-cta-secondary:hover {
+  color: var(--deep-navy);
+
+  background: var(--white);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .immigration-hero-grid {
+    gap: 45px;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(320px, 0.62fr);
+  }
+
+
+  .immigration-process-track {
+    grid-template-columns:
+      repeat(5, 1fr);
+
+    gap: 12px;
+  }
+
+
+  .immigration-process-arrow {
+    display: none;
+  }
+
+
+  .counsel-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 42px;
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .immigration-hero {
+    padding: 72px 0;
+  }
+
+
+  .immigration-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .immigration-hero-panel {
+    max-width: 650px;
+  }
+
+
+  .immigration-pathway-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .immigration-pathway-card {
+    min-height: auto;
+  }
+
+
+  .evidence-matters-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .immigration-process-track {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .immigration-process-final {
+    grid-column:
+      1 / -1;
+  }
+
+
+  .immigration-boundary-grid {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+
+  .immigration-hero {
+    padding: 58px 0;
+  }
+
+
+  .immigration-hero h1 {
+    font-size:
+      clamp(
+        2.15rem,
+        11vw,
+        3rem
+      );
+  }
+
+
+  .immigration-hero-text {
+    font-size: 1.05rem;
+  }
+
+
+  .immigration-hero-panel {
+    padding: 26px 22px;
+  }
+
+
+  .evidence-matters-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .evidence-matter-card {
+    min-height: auto;
+  }
+
+
+  .immigration-process-track {
+    grid-template-columns: 1fr;
+  }
+
+
+  .immigration-process-final {
+    grid-column: auto;
+  }
+
+
+  .counsel-role-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .counsel-role-card {
+    min-height: auto;
+  }
+
+
+  .immigration-boundary-item {
+    grid-template-columns:
+      32px 1fr;
+
+    padding: 18px;
+  }
+
+
+  .immigration-final-cta {
+    padding: 65px 0;
+  }
+
+}
