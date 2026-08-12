@@ -1195,3 +1195,104 @@
   }
 
 }
+
+
+/* =========================================================
+   COUNSEL SCOPE LABELS
+   ========================================================= */
+
+.counsel-role-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.counsel-scope-label {
+  align-self: center;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-width: 150px;
+
+  margin-top: 18px;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 0.02em;
+
+  box-shadow:
+    0 6px 16px
+    rgba(15, 35, 55, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.counsel-scope-label:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 22px
+    rgba(15, 35, 55, 0.12);
+}
+
+.counsel-scope-abc {
+  color: #315c83;
+
+  background:
+    #edf5fb;
+
+  border:
+    1px solid
+    rgba(49, 92, 131, 0.28);
+}
+
+.counsel-scope-legal {
+  color: #9a7739;
+
+  background:
+    #fbf5e8;
+
+  border:
+    1px solid
+    rgba(198, 161, 91, 0.35);
+}
+
+.counsel-scope-icon {
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.counsel-scope-abc .counsel-scope-icon {
+  color: #ffffff;
+  background: #315c83;
+}
+
+.counsel-scope-legal .counsel-scope-icon {
+  color: #ffffff;
+  background: var(--gold);
+}
