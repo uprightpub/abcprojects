@@ -4574,3 +4574,27 @@ p {
     transform: rotate(-4deg);
   }
 }
+
+/* =========================================================
+   PROGRESSIVE CITATION GROWTH - FINAL UPWARD SLOPE
+   ========================================================= */
+
+.citation-growth-title span {
+  top: 20px;
+  transform: rotate(-10.5deg);
+  transform-origin: left center;
+}
+
+@media (max-width: 850px) {
+  .citation-growth-title span {
+    top: 18px;
+    transform: rotate(-8deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .citation-growth-title span {
+    top: 14px;
+    transform: rotate(-5deg);
+  }
+}
