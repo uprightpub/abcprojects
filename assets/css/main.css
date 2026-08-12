@@ -4598,3 +4598,46 @@ p {
     transform: rotate(-5deg);
   }
 }
+
+/* =========================================================
+   PROGRESSIVE CITATION GROWTH - DEEPER CURVE / LOWER PLACEMENT
+   ========================================================= */
+
+.citation-growth-title {
+  top: 24px;
+  left: 38px;
+  right: 38px;
+  height: 52px;
+}
+
+.citation-growth-title span {
+  top: 24px;
+  transform: rotate(-13deg);
+  transform-origin: left center;
+}
+
+@media (max-width: 850px) {
+  .citation-growth-title {
+    top: 22px;
+    left: 28px;
+    right: 28px;
+  }
+
+  .citation-growth-title span {
+    top: 21px;
+    transform: rotate(-10deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .citation-growth-title {
+    top: 18px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .citation-growth-title span {
+    top: 17px;
+    transform: rotate(-7deg);
+  }
+}
