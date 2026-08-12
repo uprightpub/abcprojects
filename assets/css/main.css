@@ -4465,3 +4465,64 @@ p {
     text-align: left;
   }
 }
+
+/* =========================================================
+   PROGRESSIVE CITATION GROWTH TITLE
+   ========================================================= */
+
+.citation-matrix-visual {
+  position: relative;
+  padding-top: 58px;
+}
+
+.citation-growth-title {
+  position: absolute;
+  top: 18px;
+  left: 42px;
+  right: 42px;
+  height: 34px;
+  pointer-events: none;
+}
+
+.citation-growth-title span {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  display: inline-block;
+  color: var(--gold-strong);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.96rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transform: rotate(-4deg);
+  transform-origin: left center;
+}
+
+@media (max-width: 850px) {
+  .citation-growth-title {
+    left: 30px;
+    right: 30px;
+  }
+
+  .citation-growth-title span {
+    font-size: 0.90rem;
+    transform: rotate(-3deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .citation-matrix-visual {
+    padding-top: 54px;
+  }
+
+  .citation-growth-title {
+    left: 20px;
+    right: 20px;
+  }
+
+  .citation-growth-title span {
+    top: 7px;
+    font-size: 0.84rem;
+    transform: rotate(-2deg);
+  }
+}
