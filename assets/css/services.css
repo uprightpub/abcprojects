@@ -1155,3 +1155,168 @@
   .boundary-item { grid-template-columns: 32px 1fr; padding: 18px; }
   .services-final-cta { padding: 65px 0; }
 }
+
+/* =========================================================
+   RESEARCH VISIBILITY ECOSYSTEM
+   ICON + ACTION ENHANCEMENTS
+   ========================================================= */
+
+/* Platform icon link */
+.ecosystem-icon-link {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* Actual platform icon */
+.ecosystem-platform-icon {
+  width: 84px;
+  height: 84px;
+  display: block;
+  object-fit: contain;
+  border-radius: 50%;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+/* Icon hover */
+.ecosystem-icon-link:hover {
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.ecosystem-icon-link:hover .ecosystem-platform-icon {
+  transform: scale(1.05);
+}
+
+/* Make whole ecosystem card react slightly
+   when hovering over its icon */
+.ecosystem-node:has(.ecosystem-icon-link:hover) {
+  transform: translateY(-7px);
+  border-color: rgba(210, 164, 76, 0.75);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   ECOSYSTEM BOTTOM ACTION LINKS
+   ========================================================= */
+
+.ecosystem-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 34px;
+}
+
+/* Left: Explore Research Visibility Support */
+.ecosystem-support-link {
+  flex: 0 0 auto;
+  color: #d2a44c;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ecosystem-support-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+
+/* Right: Medium article CTA box */
+.ecosystem-resource-link {
+  margin-left: auto;
+  max-width: 760px;
+  padding: 17px 24px;
+  border: 1px solid rgba(210, 164, 76, 0.7);
+  border-radius: 10px;
+
+  color: #d2a44c;
+  background: rgba(255, 255, 255, 0.025);
+
+  font-weight: 650;
+  line-height: 1.45;
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ecosystem-resource-link span {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Medium box hover */
+.ecosystem-resource-link:hover {
+  color: #ffffff;
+  background: rgba(210, 164, 76, 0.13);
+  border-color: #d2a44c;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.ecosystem-resource-link:hover span {
+  color: #d2a44c;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .ecosystem-icon-link,
+  .ecosystem-platform-icon {
+    width: 76px;
+    height: 76px;
+  }
+
+  .ecosystem-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .ecosystem-resource-link {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .ecosystem-icon-link,
+  .ecosystem-platform-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ecosystem-icon-link {
+    margin-bottom: 18px;
+  }
+
+  .ecosystem-resource-link {
+    padding: 15px 18px;
+  }
+}
