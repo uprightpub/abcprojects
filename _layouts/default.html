@@ -35,6 +35,12 @@
   <link rel="stylesheet"
         href="{{ '/assets/css/main.css' | relative_url }}">
 
+  <!-- Page-Specific CSS -->
+  {% if page.custom_css %}
+    <link rel="stylesheet"
+          href="{{ page.custom_css | relative_url }}">
+  {% endif %}
+
 </head>
 
 <body>
