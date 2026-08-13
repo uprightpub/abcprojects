@@ -456,6 +456,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 
@@ -465,7 +468,9 @@
 
   display: block;
 
-  object-fit: contain;
+  object-fit: cover;
+
+  border-radius: 50%;
 }
 
 
@@ -483,6 +488,7 @@
 
 /* =========================================================
    OUR TEAM
+   COMPACT DESIGN
    ========================================================= */
 
 .about-team {
@@ -497,14 +503,17 @@
   grid-template-columns:
     repeat(3, minmax(0, 1fr));
 
-  gap: 18px;
+  gap: 14px;
 }
 
 
 .team-card {
-  min-height: 220px;
+  min-height: 118px;
 
-  padding: 26px 24px;
+  position: relative;
+
+  padding:
+    20px 20px 18px 62px;
 
   background:
     var(--white);
@@ -512,53 +521,60 @@
   border:
     1px solid var(--border);
 
-  border-top:
+  border-left:
     4px solid var(--navy);
 
-  border-radius: 12px;
+  border-radius: 10px;
 
   box-shadow:
-    0 5px 18px
-    rgba(15, 35, 55, 0.05);
+    0 4px 14px
+    rgba(15, 35, 55, 0.045);
 
   transition:
     transform 0.25s ease,
     border-color 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 
 .team-card:nth-child(2),
 .team-card:nth-child(5) {
-  border-top-color:
+  border-left-color:
     var(--gold);
 }
 
 
 .team-card:nth-child(3),
 .team-card:nth-child(6) {
-  border-top-color:
+  border-left-color:
     #688578;
 }
 
 
 .team-card:hover {
   transform:
-    translateY(-6px);
+    translateY(-4px);
+
+  background:
+    #fffdf8;
 
   border-color:
-    rgba(198, 161, 91, 0.55);
+    rgba(198, 161, 91, 0.50);
 
   box-shadow:
-    0 14px 28px
-    rgba(15, 35, 55, 0.10);
+    0 10px 22px
+    rgba(15, 35, 55, 0.09);
 }
 
 
 .team-number {
-  display: block;
+  position: absolute;
 
-  margin-bottom: 22px;
+  top: 21px;
+  left: 20px;
+
+  margin: 0;
 
   color: var(--gold);
 
@@ -567,23 +583,26 @@
     Arial,
     sans-serif;
 
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 
 
 .team-card h3 {
-  margin-bottom: 8px;
+  margin:
+    0 0 5px;
 
-  font-size: 1.05rem;
-  line-height: 1.4;
+  color: var(--navy);
+
+  font-size: 1rem;
+  line-height: 1.35;
 }
 
 
 .team-role {
   display: block;
 
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 
   color: var(--navy);
 
@@ -592,7 +611,8 @@
     Arial,
     sans-serif;
 
-  font-size: 0.84rem;
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 
@@ -601,8 +621,8 @@
 
   color: var(--muted);
 
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.82rem;
+  line-height: 1.4;
 }
 
 
@@ -1144,17 +1164,30 @@
 
 
   .about-platform-icon {
-    flex-basis: 60px;
+  flex: 0 0 69px;
 
-    width: 60px;
-    height: 60px;
-  }
+  width: 69px;
+  height: 69px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 
-  .about-platform-icon img {
-    width: 60px;
-    height: 60px;
-  }
+.about-platform-icon img {
+  width: 69px;
+  height: 69px;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
 
 
   .team-card {
@@ -1167,3 +1200,41 @@
   }
 
 }
+
+/* =========================================================
+   TEAM RESPONSIVE OVERRIDES
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .team-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 640px) {
+
+  .team-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .team-card {
+    min-height: auto;
+
+    padding:
+      18px 18px 18px 58px;
+  }
+
+
+  .team-number {
+    top: 19px;
+    left: 18px;
+  }
+
+}
+
