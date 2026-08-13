@@ -1241,67 +1241,85 @@
 
 
 /* =========================================================
-   FINAL ABOUT PAGE REFINEMENTS
+   FINAL ORDER + TEAM VISUAL UPDATE
    ========================================================= */
 
+/* WHO WE ARE: distinct cool neutral background below Digital Scholarship */
 .about-who {
-  background: #f3f6f7;
-  border-top: 1px solid rgba(18, 48, 74, 0.08);
-  border-bottom: 1px solid rgba(18, 48, 74, 0.08);
+  background: #f2f6f8;
+  border-top: 1px solid #dbe4ea;
+  border-bottom: 1px solid #dbe4ea;
 }
 
+/* OUR TEAM: clearly different warm background */
 .about-team {
+  background: #fbf4e8 !important;
+}
+
+/* Compact team cards */
+.about-team .team-card {
   position: relative;
   overflow: hidden;
-  background: #fbf7ef;
+  min-height: 112px;
+  padding: 18px 20px 16px 60px;
+  background: #ffffff;
+  border: 1px solid #dfe5e9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(15, 35, 55, 0.04);
 }
 
-.about-team::before,
-.about-team::after {
+/* Deep-orange hover bars enter from BOTH sides of each team card */
+.about-team .team-card::before,
+.about-team .team-card::after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 7px;
-  background: #d86418;
-  opacity: 0.88;
-  transition: width 0.28s ease, opacity 0.28s ease, box-shadow 0.28s ease;
+  width: 0;
+  background: #d85f12;
+  transition: width 0.28s ease;
 }
 
-.about-team::before {
+.about-team .team-card::before {
   left: 0;
 }
 
-.about-team::after {
+.about-team .team-card::after {
   right: 0;
 }
 
-.about-team:hover::before,
-.about-team:hover::after {
-  width: 14px;
-  opacity: 1;
-  box-shadow: 0 0 24px rgba(216, 100, 24, 0.28);
-}
-
-.about-team .container,
-.about-team .about-container {
-  position: relative;
-  z-index: 1;
+.about-team .team-card:hover::before,
+.about-team .team-card:hover::after {
+  width: 6px;
 }
 
 .about-team .team-card:hover {
-  border-color: rgba(216, 100, 24, 0.42);
-  box-shadow: 0 10px 24px rgba(126, 63, 22, 0.10);
+  transform: translateY(-3px);
+  border-color: rgba(216, 95, 18, 0.45);
+  box-shadow: 0 10px 22px rgba(122, 62, 20, 0.10);
+}
+
+.about-team .team-number {
+  top: 19px;
+  left: 20px;
+}
+
+.about-team .team-card h3 {
+  margin: 0 0 4px;
+}
+
+.about-team .team-role {
+  margin-bottom: 4px;
 }
 
 @media (max-width: 640px) {
-  .about-team::before,
-  .about-team::after {
-    width: 4px;
+  .about-team .team-card {
+    min-height: auto;
+    padding: 17px 18px 16px 56px;
   }
 
-  .about-team:hover::before,
-  .about-team:hover::after {
-    width: 7px;
+  .about-team .team-number {
+    top: 18px;
+    left: 18px;
   }
 }
