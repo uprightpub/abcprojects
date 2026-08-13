@@ -873,130 +873,68 @@
    ========================================================= */
 
 .medium-insights {
-  background:
-    var(--white);
+  background: var(--white);
 }
 
+.medium-insights .container {
+  width: 70%;
+  max-width: 1120px;
+}
 
 .medium-insights-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-
-  gap: 40px;
-
   margin-bottom: 34px;
 }
 
-
-.medium-insights-heading > div {
-  max-width: 850px;
-}
-
-
 .medium-insights-heading h2 {
-  max-width: 820px;
-
+  max-width: 900px;
   margin-bottom: 15px;
 }
 
-
 .medium-insights-heading p {
-  max-width: 820px;
-
+  max-width: 100%;
   margin: 0;
-
   color: var(--muted);
-
   font-size: 1.01rem;
   line-height: 1.7;
 }
 
-
-.medium-profile-button {
-  flex: 0 0 auto;
-
-  padding: 11px 16px;
-
-  color: var(--navy);
-
-  background:
-    var(--off-white);
-
-  border:
-    1px solid var(--border);
-
-  border-radius: 8px;
-
-  font-family:
-    "Montserrat",
-    Arial,
-    sans-serif;
-
-  font-size: 0.8rem;
+.medium-inline-link {
+  margin-left: 5px;
+  color: var(--gold);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.9rem;
   font-weight: 700;
-
-  transition:
-    color 0.22s ease,
-    background 0.22s ease,
-    transform 0.22s ease;
+  white-space: nowrap;
+  transition: color 0.2s ease;
 }
 
-
-.medium-profile-button:hover {
-  color: var(--white);
-
-  background: var(--navy);
-
-  transform:
-    translateY(-2px);
+.medium-inline-link:hover {
+  color: var(--navy);
 }
-
 
 /* ARTICLE LIST */
 
 .medium-reading-list {
-  width: 75%;
-  max-width: 980px;
-
+  width: 100%;
+  max-width: none;
   display: grid;
-
   grid-template-columns: 1fr;
-
   gap: 10px;
-
-  margin-top: 10px;
+  margin-top: 30px;
 }
-
 
 .medium-reading-item {
   display: grid;
-
-  grid-template-columns:
-    42px
-    minmax(0, 1fr)
-    28px;
-
+  grid-template-columns: 42px minmax(0, 1fr) 28px;
   gap: 12px;
-
   min-height: 68px;
-
   align-items: center;
-
   padding: 14px 18px;
-
   color: var(--charcoal);
-
-  background:
-    #fafbfc;
-
-  border:
-    1px solid var(--border);
-
+  background: #fafbfc;
+  border: 1px solid var(--border);
   border-radius: 9px;
-
   text-decoration: none;
-
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease,
@@ -1004,98 +942,71 @@
     background 0.22s ease;
 }
 
-
 .medium-reading-item:hover {
-  transform:
-    translateX(4px);
-
-  background:
-    var(--white);
-
-  border-color:
-    rgba(198, 161, 91, 0.65);
-
-  box-shadow:
-    0 7px 18px
-    rgba(15, 35, 55, 0.07);
+  transform: translateX(4px);
+  background: var(--white);
+  border-color: rgba(198, 161, 91, 0.65);
+  box-shadow: 0 7px 18px rgba(15, 35, 55, 0.07);
 }
-
 
 .medium-article-number {
   color: var(--gold);
-
-  font-family:
-    "Montserrat",
-    Arial,
-    sans-serif;
-
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
 }
 
-
 .medium-reading-item p {
   margin: 0;
-
-  color: var(--charcoal);
-
+  color: var(--navy);
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 0.91rem;
+  font-weight: 600;
   line-height: 1.5;
 }
 
-
 .medium-article-arrow {
   color: var(--gold);
-
   font-size: 0.95rem;
-
   text-align: right;
-
-  transition:
-    transform 0.22s ease;
+  transition: transform 0.22s ease;
 }
 
-
-.medium-reading-item:hover
-.medium-article-arrow {
-  transform:
-    translate(2px, -2px);
+.medium-reading-item:hover .medium-article-arrow {
+  transform: translate(2px, -2px);
 }
-
 
 /* =========================================================
    MEDIUM INSIGHTS RESPONSIVE
    ========================================================= */
 
 @media (max-width: 850px) {
-
-  .medium-insights-heading {
-    align-items: flex-start;
-
-    flex-direction: column;
+  .medium-insights .container {
+    width: min(calc(100% - 40px), 1180px);
+    max-width: none;
   }
-
 
   .medium-reading-list {
     width: 100%;
     max-width: none;
   }
-
 }
 
-
 @media (max-width: 640px) {
-
-  .medium-reading-item {
-    grid-template-columns:
-      34px
-      minmax(0, 1fr)
-      22px;
-
-    padding:
-      14px 14px;
+  .medium-insights .container {
+    width: min(calc(100% - 28px), 1180px);
   }
 
+  .medium-inline-link {
+    display: inline;
+    margin-left: 3px;
+    white-space: normal;
+  }
+
+  .medium-reading-item {
+    grid-template-columns: 34px minmax(0, 1fr) 22px;
+    padding: 14px;
+  }
 }
 
 
