@@ -915,25 +915,25 @@
 /* ARTICLE LIST */
 
 .medium-reading-list {
-  width: 100%;
+  width: 75%;
   max-width: none;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 8px;
   margin-top: 30px;
 }
 
 .medium-reading-item {
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) 28px;
-  gap: 12px;
-  min-height: 68px;
+  grid-template-columns: 38px minmax(0, 1fr) 24px;
+  gap: 10px;
+  min-height: 51px;
   align-items: center;
-  padding: 14px 18px;
+  padding: 10px 15px;
   color: var(--charcoal);
   background: #fafbfc;
   border: 1px solid var(--border);
-  border-radius: 9px;
+  border-radius: 8px;
   text-decoration: none;
   transition:
     transform 0.22s ease,
