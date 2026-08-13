@@ -1238,3 +1238,70 @@
 
 }
 
+
+
+/* =========================================================
+   FINAL ABOUT PAGE REFINEMENTS
+   ========================================================= */
+
+.about-who {
+  background: #f3f6f7;
+  border-top: 1px solid rgba(18, 48, 74, 0.08);
+  border-bottom: 1px solid rgba(18, 48, 74, 0.08);
+}
+
+.about-team {
+  position: relative;
+  overflow: hidden;
+  background: #fbf7ef;
+}
+
+.about-team::before,
+.about-team::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 7px;
+  background: #d86418;
+  opacity: 0.88;
+  transition: width 0.28s ease, opacity 0.28s ease, box-shadow 0.28s ease;
+}
+
+.about-team::before {
+  left: 0;
+}
+
+.about-team::after {
+  right: 0;
+}
+
+.about-team:hover::before,
+.about-team:hover::after {
+  width: 14px;
+  opacity: 1;
+  box-shadow: 0 0 24px rgba(216, 100, 24, 0.28);
+}
+
+.about-team .container,
+.about-team .about-container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-team .team-card:hover {
+  border-color: rgba(216, 100, 24, 0.42);
+  box-shadow: 0 10px 24px rgba(126, 63, 22, 0.10);
+}
+
+@media (max-width: 640px) {
+  .about-team::before,
+  .about-team::after {
+    width: 4px;
+  }
+
+  .about-team:hover::before,
+  .about-team:hover::after {
+    width: 7px;
+  }
+}
