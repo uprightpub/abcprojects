@@ -232,9 +232,14 @@
    ========================================================= */
 
 .service-page-navigation {
-  padding: 30px 0;
+  padding: 34px 0;
 
-  background: var(--off-white);
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #f2f6f9 100%
+    );
 
   border-top:
     1px solid var(--border);
@@ -257,39 +262,32 @@
 
 
 .service-page-navigation a {
-  min-width: 240px;
+  position: relative;
 
-  padding: 18px 20px;
+  overflow: hidden;
 
-  background: var(--white);
+  min-width: 300px;
 
-  border:
-    1px solid var(--border);
+  padding: 21px 24px;
 
   border-radius:
-    var(--radius-sm);
+    var(--radius-md);
+
+  box-shadow:
+    0 6px 18px rgba(15, 35, 55, 0.08);
 
   transition:
-    border-color 0.2s ease,
-    transform 0.2s ease;
-}
-
-
-.service-page-navigation a:hover {
-  transform:
-    translateY(-2px);
-
-  border-color:
-    var(--gold);
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
 }
 
 
 .service-page-navigation span {
   display: block;
 
-  margin-bottom: 4px;
-
-  color: var(--muted);
+  margin-bottom: 5px;
 
   font-size: 0.78rem;
 }
@@ -298,19 +296,119 @@
 .service-page-navigation strong {
   display: block;
 
-  color: var(--navy);
-
   font-family:
     "Montserrat",
     Arial,
     sans-serif;
 
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
 
+/* All Services card */
+
+.service-nav-all {
+  background:
+    linear-gradient(
+      135deg,
+      #fffaf0 0%,
+      #f8edcf 100%
+    );
+
+  border:
+    1px solid rgba(198, 161, 91, 0.55);
+}
+
+
+.service-nav-all span {
+  color: #8a6829;
+}
+
+
+.service-nav-all strong {
+  color: var(--navy);
+}
+
+
+/* Next Service card */
+
 .service-nav-next {
   text-align: right;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--navy) 0%,
+      var(--deep-navy) 100%
+    );
+
+  border:
+    1px solid var(--navy);
+}
+
+
+.service-nav-next span {
+  color: #d8bd83;
+}
+
+
+.service-nav-next strong {
+  color: var(--white);
+}
+
+
+/* Navigation card hover effects */
+
+.service-page-navigation a:hover {
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 15px 30px rgba(15, 35, 55, 0.16);
+}
+
+
+.service-nav-all:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #fff4d8 0%,
+      #efd69b 100%
+    );
+
+  border-color:
+    var(--gold);
+}
+
+
+.service-nav-next:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #224b70 0%,
+      #142f47 100%
+    );
+
+  border-color:
+    var(--gold);
+}
+
+
+.service-nav-all:hover strong {
+  transform:
+    translateX(4px);
+}
+
+
+.service-nav-next:hover strong {
+  transform:
+    translateX(5px);
+
+  color: #f1d69a;
 }
 
 
