@@ -15,17 +15,34 @@
    ========================================================= */
 
 .service-page-hero {
+  position: relative;
+
+  overflow: hidden;
+
   padding: 82px 0 70px;
 
   background:
+    radial-gradient(
+      circle at 0% 50%,
+      rgba(234, 154, 48, 0.24) 0%,
+      rgba(234, 154, 48, 0.10) 24%,
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at 100% 45%,
+      rgba(246, 193, 72, 0.28) 0%,
+      rgba(246, 193, 72, 0.11) 25%,
+      transparent 52%
+    ),
     linear-gradient(
       135deg,
       #ffffff 0%,
+      #fffdf8 50%,
       var(--off-white) 100%
     );
 
   border-bottom:
-    1px solid var(--border);
+    1px solid rgba(198, 161, 91, 0.30);
 }
 
 
