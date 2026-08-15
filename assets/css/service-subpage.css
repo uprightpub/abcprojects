@@ -411,6 +411,52 @@
   color: #f1d69a;
 }
 
+/* All Services center card */
+
+.service-nav-center {
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5f9fc 0%,
+      #e6eff6 100%
+    );
+
+  border:
+    1px solid rgba(23, 50, 77, 0.25);
+}
+
+
+.service-nav-center span {
+  color: var(--muted);
+}
+
+
+.service-nav-center strong {
+  color: var(--navy);
+}
+
+
+.service-nav-center:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #edf5fa 0%,
+      #d9e8f2 100%
+    );
+
+  border-color:
+    var(--navy);
+}
+
+
+.service-nav-center:hover strong {
+  transform:
+    translateY(-2px);
+
+  color: var(--gold-strong);
+}
 
 /* =========================================================
    RESPONSIVE
@@ -452,5 +498,10 @@
   .service-nav-next {
     text-align: left;
   }
+
+
+  .service-nav-center {
+  text-align: left;
+}
 
 }
