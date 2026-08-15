@@ -1,0 +1,341 @@
+/* =========================================================
+   SERVICE SUBPAGE
+   ========================================================= */
+
+.service-page-container {
+  width: min(
+    calc(100% - 40px),
+    960px
+  );
+}
+
+
+/* =========================================================
+   SERVICE INTRODUCTION
+   ========================================================= */
+
+.service-page-hero {
+  padding: 82px 0 70px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      var(--off-white) 100%
+    );
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+
+.service-page-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+
+.service-page-hero h1 {
+  max-width: 820px;
+
+  margin-bottom: 20px;
+
+  font-size:
+    clamp(
+      2.35rem,
+      5vw,
+      3.75rem
+    );
+}
+
+
+.service-page-hero p {
+  max-width: 760px;
+
+  margin-bottom: 0;
+
+  color: var(--muted);
+
+  font-size: 1.16rem;
+}
+
+
+/* =========================================================
+   CORE ASSESSMENT SUPPORT
+   ========================================================= */
+
+.service-page-content {
+  padding: 76px 0;
+
+  background: var(--white);
+}
+
+
+.service-page-content > .service-page-container > h2 {
+  margin-bottom: 30px;
+}
+
+
+.service-support-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 16px;
+}
+
+
+.service-support-item {
+  display: grid;
+
+  grid-template-columns:
+    38px 1fr;
+
+  gap: 14px;
+
+  min-height: 170px;
+
+  padding: 25px 23px;
+
+  background: var(--off-white);
+
+  border:
+    1px solid var(--border);
+
+  border-top:
+    3px solid var(--gold);
+
+  border-radius:
+    var(--radius-md);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.service-support-item:hover {
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(198, 161, 91, 0.65);
+
+  box-shadow:
+    var(--shadow-sm);
+}
+
+
+.service-support-item > span {
+  color: var(--gold);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+
+.service-support-item h3 {
+  margin-bottom: 9px;
+
+  font-size: 1.02rem;
+}
+
+
+.service-support-item p {
+  margin-bottom: 0;
+
+  color: var(--muted);
+
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   ASSESSMENT RESULT
+   ========================================================= */
+
+.service-assessment-result {
+  margin-top: 30px;
+
+  padding: 27px 30px;
+
+  background: var(--deep-navy);
+
+  border-left:
+    5px solid var(--gold);
+
+  border-radius:
+    var(--radius-md);
+}
+
+
+.service-assessment-result h2 {
+  margin-bottom: 10px;
+
+  color: var(--white);
+
+  font-size: 1.3rem;
+}
+
+
+.service-assessment-result p {
+  margin: 0;
+
+  color: #cbd7e2;
+}
+
+
+/* =========================================================
+   SERVICE NAVIGATION
+   ========================================================= */
+
+.service-page-navigation {
+  padding: 30px 0;
+
+  background: var(--off-white);
+
+  border-top:
+    1px solid var(--border);
+}
+
+
+.service-page-navigation-inner {
+  width: min(
+    calc(100% - 40px),
+    960px
+  );
+
+  display: flex;
+
+  align-items: stretch;
+  justify-content: space-between;
+
+  gap: 18px;
+}
+
+
+.service-page-navigation a {
+  min-width: 240px;
+
+  padding: 18px 20px;
+
+  background: var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    var(--radius-sm);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.service-page-navigation a:hover {
+  transform:
+    translateY(-2px);
+
+  border-color:
+    var(--gold);
+}
+
+
+.service-page-navigation span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: var(--muted);
+
+  font-size: 0.78rem;
+}
+
+
+.service-page-navigation strong {
+  display: block;
+
+  color: var(--navy);
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.9rem;
+}
+
+
+.service-nav-next {
+  text-align: right;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .service-page-hero {
+    padding: 60px 0 52px;
+  }
+
+
+  .service-page-content {
+    padding: 58px 0;
+  }
+
+
+  .service-support-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .service-support-item {
+    min-height: auto;
+  }
+
+
+  .service-page-navigation-inner {
+    flex-direction: column;
+  }
+
+
+  .service-page-navigation a {
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  .service-nav-next {
+    text-align: left;
+  }
+
+}
