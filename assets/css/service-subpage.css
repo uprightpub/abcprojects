@@ -92,7 +92,7 @@
 
 
 /* =========================================================
-   CORE ASSESSMENT SUPPORT
+   CORE SERVICE SUPPORT
    ========================================================= */
 
 .service-page-content {
@@ -193,7 +193,7 @@
 
 
 /* =========================================================
-   ASSESSMENT RESULT
+   SERVICE OUTCOME
    ========================================================= */
 
 .service-assessment-result {
@@ -290,6 +290,9 @@
   margin-bottom: 5px;
 
   font-size: 0.78rem;
+
+  transition:
+    color 0.25s ease;
 }
 
 
@@ -309,7 +312,18 @@
 }
 
 
-/* All Services card */
+.service-page-navigation a:hover {
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 15px 30px rgba(15, 35, 55, 0.16);
+}
+
+
+/* =========================================================
+   PREVIOUS SERVICE CARD
+   ========================================================= */
 
 .service-nav-all {
   background:
@@ -334,44 +348,6 @@
 }
 
 
-/* Next Service card */
-
-.service-nav-next {
-  text-align: right;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--navy) 0%,
-      var(--deep-navy) 100%
-    );
-
-  border:
-    1px solid var(--navy);
-}
-
-
-.service-nav-next span {
-  color: #d8bd83;
-}
-
-
-.service-nav-next strong {
-  color: var(--white);
-}
-
-
-/* Navigation card hover effects */
-
-.service-page-navigation a:hover {
-  transform:
-    translateY(-6px);
-
-  box-shadow:
-    0 15px 30px rgba(15, 35, 55, 0.16);
-}
-
-
 .service-nav-all:hover {
   background:
     linear-gradient(
@@ -385,33 +361,15 @@
 }
 
 
-.service-nav-next:hover {
-  background:
-    linear-gradient(
-      135deg,
-      #224b70 0%,
-      #142f47 100%
-    );
-
-  border-color:
-    var(--gold);
-}
-
-
 .service-nav-all:hover strong {
   transform:
     translateX(4px);
 }
 
 
-.service-nav-next:hover strong {
-  transform:
-    translateX(5px);
-
-  color: #f1d69a;
-}
-
-/* All Services center card */
+/* =========================================================
+   ALL SERVICES CENTER CARD
+   ========================================================= */
 
 .service-nav-center {
   text-align: center;
@@ -442,12 +400,20 @@
   background:
     linear-gradient(
       135deg,
-      #edf5fa 0%,
-      #d9e8f2 100%
+      #315c83 0%,
+      #234765 100%
     );
 
   border-color:
-    var(--navy);
+    var(--gold);
+
+  box-shadow:
+    0 15px 30px rgba(23, 50, 77, 0.22);
+}
+
+
+.service-nav-center:hover span {
+  color: #e6c982;
 }
 
 
@@ -455,12 +421,74 @@
   transform:
     translateY(-2px);
 
-  color: var(--gold-strong);
+  color: var(--white);
 }
+
+
+/* =========================================================
+   NEXT SERVICE CARD
+   ========================================================= */
+
+.service-nav-next {
+  text-align: right;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--navy) 0%,
+      var(--deep-navy) 100%
+    );
+
+  border:
+    1px solid var(--navy);
+}
+
+
+.service-nav-next span {
+  color: #d8bd83;
+}
+
+
+.service-nav-next strong {
+  color: var(--white);
+}
+
+
+.service-nav-next:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #224b70 0%,
+      #142f47 100%
+    );
+
+  border-color:
+    var(--gold);
+}
+
+
+.service-nav-next:hover strong {
+  transform:
+    translateX(5px);
+
+  color: #f1d69a;
+}
+
 
 /* =========================================================
    RESPONSIVE
    ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .service-page-navigation a {
+    min-width: 0;
+
+    flex: 1;
+  }
+
+}
+
 
 @media (max-width: 700px) {
 
@@ -495,13 +523,10 @@
   }
 
 
+  .service-nav-all,
+  .service-nav-center,
   .service-nav-next {
     text-align: left;
   }
-
-
-  .service-nav-center {
-  text-align: left;
-}
 
 }
