@@ -191,6 +191,246 @@
   line-height: 1.55;
 }
 
+/* =========================================================
+   PUBLICATION SUPPORT TWO-COLUMN LAYOUT
+   ========================================================= */
+
+.publication-page-container {
+  width: min(
+    calc(100% - 40px),
+    1180px
+  );
+}
+
+
+.publication-support-columns {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  align-items: stretch;
+
+  gap: 24px;
+}
+
+
+.publication-support-column {
+  display: grid;
+
+  grid-template-rows:
+    auto repeat(3, 1fr);
+
+  gap: 16px;
+
+  padding: 22px;
+
+  border-radius:
+    var(--radius-md);
+}
+
+
+/* Journal publication column */
+
+.publication-journal-column {
+  background:
+    linear-gradient(
+      180deg,
+      #f2f7fb 0%,
+      #f8fafc 100%
+    );
+
+  border:
+    1px solid rgba(49, 92, 131, 0.25);
+}
+
+
+/* Specialized publication column */
+
+.publication-special-column {
+  background:
+    linear-gradient(
+      180deg,
+      #fff9ec 0%,
+      #fcfaf5 100%
+    );
+
+  border:
+    1px solid rgba(198, 161, 91, 0.38);
+}
+
+
+/* Column headings */
+
+.publication-column-heading {
+  min-height: 235px;
+
+  padding: 25px 24px;
+
+  border-radius:
+    var(--radius-md);
+}
+
+
+.publication-column-heading > span {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+.publication-column-heading h2 {
+  margin-bottom: 14px;
+
+  font-size: 1.35rem;
+}
+
+
+.publication-column-heading p {
+  margin: 0;
+
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+
+/* Left column heading */
+
+.publication-journal-column
+.publication-column-heading {
+  background:
+    linear-gradient(
+      135deg,
+      #17324d 0%,
+      #234f72 100%
+    );
+}
+
+
+.publication-journal-column
+.publication-column-heading > span {
+  color: #e1bd72;
+}
+
+
+.publication-journal-column
+.publication-column-heading h2 {
+  color: var(--white);
+}
+
+
+.publication-journal-column
+.publication-column-heading p {
+  color: #d4e0e9;
+}
+
+
+/* Right column heading */
+
+.publication-special-column
+.publication-column-heading {
+  background:
+    linear-gradient(
+      135deg,
+      #fff3d5 0%,
+      #ecd397 100%
+    );
+
+  border:
+    1px solid rgba(198, 161, 91, 0.45);
+}
+
+
+.publication-special-column
+.publication-column-heading > span {
+  color: #8a6829;
+}
+
+
+.publication-special-column
+.publication-column-heading h2 {
+  color: var(--navy);
+}
+
+
+.publication-special-column
+.publication-column-heading p {
+  color: #5f6670;
+}
+
+
+/* Publication support cards */
+
+.publication-support-column
+.service-support-item {
+  min-height: 190px;
+
+  background: var(--white);
+
+  border-top:
+    1px solid var(--border);
+
+  box-shadow:
+    0 5px 16px rgba(15, 35, 55, 0.06);
+}
+
+
+.publication-journal-column
+.service-support-item {
+  border-left:
+    4px solid #315c83;
+}
+
+
+.publication-special-column
+.service-support-item {
+  border-left:
+    4px solid var(--gold);
+}
+
+
+.publication-support-column
+.service-support-item:hover {
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 14px 28px rgba(15, 35, 55, 0.13);
+}
+
+
+.publication-journal-column
+.service-support-item:hover {
+  border-color:
+    rgba(49, 92, 131, 0.65);
+
+  border-left-color:
+    #315c83;
+}
+
+
+.publication-special-column
+.service-support-item:hover {
+  border-color:
+    rgba(198, 161, 91, 0.75);
+
+  border-left-color:
+    var(--gold);
+}
 
 /* =========================================================
    SERVICE OUTCOME
@@ -527,6 +767,41 @@
   .service-nav-center,
   .service-nav-next {
     text-align: left;
+  }
+
+}
+
+/* Publication support responsive layout */
+
+@media (max-width: 900px) {
+
+  .publication-support-columns {
+    grid-template-columns: 1fr;
+  }
+
+
+  .publication-column-heading {
+    min-height: auto;
+  }
+
+
+  .publication-support-column
+  .service-support-item {
+    min-height: auto;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .publication-support-column {
+    padding: 14px;
+  }
+
+
+  .publication-column-heading {
+    padding: 22px 20px;
   }
 
 }
