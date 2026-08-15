@@ -102,7 +102,8 @@
 }
 
 
-.service-page-content > .service-page-container > h2 {
+.service-page-content > .service-page-container > h2,
+.service-page-content > .publication-page-container > h2 {
   margin-bottom: 30px;
 }
 
@@ -191,6 +192,7 @@
   line-height: 1.55;
 }
 
+
 /* =========================================================
    PUBLICATION SUPPORT TWO-COLUMN LAYOUT
    ========================================================= */
@@ -200,6 +202,9 @@
     calc(100% - 40px),
     1180px
   );
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -431,6 +436,7 @@
   border-left-color:
     var(--gold);
 }
+
 
 /* =========================================================
    SERVICE OUTCOME
@@ -730,49 +736,6 @@
 }
 
 
-@media (max-width: 700px) {
-
-  .service-page-hero {
-    padding: 60px 0 52px;
-  }
-
-
-  .service-page-content {
-    padding: 58px 0;
-  }
-
-
-  .service-support-list {
-    grid-template-columns: 1fr;
-  }
-
-
-  .service-support-item {
-    min-height: auto;
-  }
-
-
-  .service-page-navigation-inner {
-    flex-direction: column;
-  }
-
-
-  .service-page-navigation a {
-    width: 100%;
-    min-width: 0;
-  }
-
-
-  .service-nav-all,
-  .service-nav-center,
-  .service-nav-next {
-    text-align: left;
-  }
-
-}
-
-/* Publication support responsive layout */
-
 @media (max-width: 900px) {
 
   .publication-support-columns {
@@ -795,6 +758,26 @@
 
 @media (max-width: 700px) {
 
+  .service-page-hero {
+    padding: 60px 0 52px;
+  }
+
+
+  .service-page-content {
+    padding: 58px 0;
+  }
+
+
+  .service-support-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .service-support-item {
+    min-height: auto;
+  }
+
+
   .publication-support-column {
     padding: 14px;
   }
@@ -802,6 +785,24 @@
 
   .publication-column-heading {
     padding: 22px 20px;
+  }
+
+
+  .service-page-navigation-inner {
+    flex-direction: column;
+  }
+
+
+  .service-page-navigation a {
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  .service-nav-all,
+  .service-nav-center,
+  .service-nav-next {
+    text-align: left;
   }
 
 }
