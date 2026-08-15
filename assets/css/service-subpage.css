@@ -145,9 +145,10 @@
     var(--radius-md);
 
   transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 
@@ -190,6 +191,232 @@
 
   font-size: 0.94rem;
   line-height: 1.55;
+}
+
+
+/* =========================================================
+   HIGHLIGHTED RESEARCH VISIBILITY CARDS
+   ========================================================= */
+
+/* Research-platform card */
+
+.visibility-platform-card {
+  background:
+    linear-gradient(
+      135deg,
+      #eef6fb 0%,
+      #dceaf4 100%
+    );
+
+  border:
+    1px solid rgba(49, 92, 131, 0.42);
+
+  border-left:
+    5px solid #315c83;
+
+  border-top:
+    1px solid rgba(49, 92, 131, 0.42);
+
+  box-shadow:
+    0 7px 20px rgba(23, 50, 77, 0.09);
+}
+
+
+.visibility-platform-card > span {
+  color: #315c83;
+}
+
+
+.visibility-platform-card h3 {
+  color: #17324d;
+}
+
+
+.visibility-platform-card:hover {
+  transform:
+    translateY(-6px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #e2f0f8 0%,
+      #cbdfea 100%
+    );
+
+  border-color:
+    #315c83;
+
+  box-shadow:
+    0 16px 32px rgba(23, 50, 77, 0.17);
+}
+
+
+/* Professional-portfolio card */
+
+.visibility-portfolio-card {
+  background:
+    linear-gradient(
+      135deg,
+      #fff9ec 0%,
+      #f6e8c6 100%
+    );
+
+  border:
+    1px solid rgba(198, 161, 91, 0.52);
+
+  border-left:
+    5px solid var(--gold);
+
+  border-top:
+    1px solid rgba(198, 161, 91, 0.52);
+
+  box-shadow:
+    0 7px 20px rgba(138, 104, 41, 0.10);
+}
+
+
+.visibility-portfolio-card > span {
+  color: #9b7228;
+}
+
+
+.visibility-portfolio-card h3 {
+  color: var(--navy);
+}
+
+
+.visibility-portfolio-card:hover {
+  transform:
+    translateY(-6px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff4d8 0%,
+      #efd79f 100%
+    );
+
+  border-color:
+    var(--gold);
+
+  box-shadow:
+    0 16px 32px rgba(138, 104, 41, 0.17);
+}
+
+
+/* =========================================================
+   EXTERNAL PLATFORM LINK PILLS
+   ========================================================= */
+
+.platform-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin:
+    3px 2px;
+
+  padding:
+    3px 9px;
+
+  color:
+    var(--navy);
+
+  background:
+    rgba(255, 255, 255, 0.82);
+
+  border:
+    1px solid rgba(49, 92, 131, 0.32);
+
+  border-radius:
+    20px;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  text-decoration:
+    none;
+
+  box-shadow:
+    0 2px 6px rgba(15, 35, 55, 0.06);
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.platform-link::after {
+  content:
+    "↗";
+
+  margin-left:
+    5px;
+
+  color:
+    var(--gold-strong);
+
+  font-size:
+    0.7rem;
+}
+
+
+.platform-link:hover {
+  color:
+    var(--white);
+
+  background:
+    var(--navy);
+
+  border-color:
+    var(--gold);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 7px 15px rgba(15, 35, 55, 0.18);
+}
+
+
+.platform-link:hover::after {
+  color:
+    #f1d69a;
+}
+
+
+/* Gold link variation inside portfolio card */
+
+.visibility-portfolio-card
+.platform-link {
+  color:
+    #704f17;
+
+  border-color:
+    rgba(198, 161, 91, 0.55);
+}
+
+
+.visibility-portfolio-card
+.platform-link:hover {
+  color:
+    var(--white);
+
+  background:
+    #9b7228;
+
+  border-color:
+    var(--navy);
 }
 
 
@@ -238,7 +465,7 @@
 }
 
 
-/* Journal publication column */
+/* Journal-publication column */
 
 .publication-journal-column {
   background:
@@ -253,7 +480,7 @@
 }
 
 
-/* Specialized publication column */
+/* Specialized-publication column */
 
 .publication-special-column {
   background:
@@ -268,7 +495,7 @@
 }
 
 
-/* Column headings */
+/* Publication-column headings */
 
 .publication-column-heading {
   min-height: 235px;
@@ -313,7 +540,7 @@
 }
 
 
-/* Left column heading */
+/* Left publication-column heading */
 
 .publication-journal-column
 .publication-column-heading {
@@ -344,7 +571,7 @@
 }
 
 
-/* Right column heading */
+/* Right publication-column heading */
 
 .publication-special-column
 .publication-column-heading {
