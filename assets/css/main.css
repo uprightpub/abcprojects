@@ -4810,3 +4810,28 @@ p {
   }
 
 }
+/* FOOTER INLINE PATHWAY LINKS */
+
+.footer-pathway-pair {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #bac8d5;
+
+  white-space: nowrap;
+}
+
+
+.footer-pathway-pair a {
+  display: inline-block;
+}
+
+
+.footer-pathway-pair span {
+  color:
+    rgba(255, 255, 255, 0.38);
+
+  font-size: 0.9rem;
+}
