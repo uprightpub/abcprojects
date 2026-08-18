@@ -1357,7 +1357,7 @@ p {
 .process-step:not(.process-step-6)::after {
 
   content:
-    "âžœ";
+    "➜";
 
   position:
     absolute;
@@ -1759,7 +1759,7 @@ p {
 .profile-flow-item:not(:last-child)::after {
 
   content:
-    "âžœ";
+    "➜";
 
   position:
     absolute;
@@ -3198,7 +3198,7 @@ p {
   .process-step:not(.process-step-6)::after {
 
     content:
-      "â†“";
+      "↓";
 
     display:
       block;
@@ -3262,7 +3262,7 @@ p {
   .profile-flow-item:not(:last-child)::after {
 
     content:
-      "â†“";
+      "↓";
 
     top:
       auto;
