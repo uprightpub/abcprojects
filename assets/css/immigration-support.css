@@ -238,7 +238,7 @@
   display: grid;
 
   grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+    repeat(2, minmax(0, 1fr));
 
   gap: 20px;
 }
@@ -290,6 +290,19 @@
     linear-gradient(
       180deg,
       #f1f7fb 0%,
+      #ffffff 50%
+    );
+}
+
+
+.pathway-eb1b {
+  border-top-color:
+    #7c6a9b;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f5f2f9 0%,
       #ffffff 50%
     );
 }
@@ -397,7 +410,6 @@
 
   grid-template-columns:
     repeat(3, minmax(0, 1fr));
-
   gap: 18px;
 }
 
@@ -621,7 +633,7 @@
 
 
 .comparison-table {
-  min-width: 760px;
+  min-width: 920px;
 
   background:
     var(--white);
@@ -633,7 +645,7 @@
 
   grid-template-columns:
     1.65fr
-    repeat(3, 1fr);
+    repeat(4, 1fr);
 
   align-items: center;
 }
@@ -798,7 +810,6 @@
   margin-bottom: 15px;
 
   color: var(--gold);
-
   font-family:
     "Montserrat",
     Arial,
