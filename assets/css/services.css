@@ -691,6 +691,33 @@
 
 .pathway-eb1 { border-left-color: #315c83; background: linear-gradient(90deg, #f4f8fc 0%, #ffffff 48%); }
 .pathway-eb1:hover { border-color: rgba(49, 92, 131, 0.55); border-left-color: #315c83; background: linear-gradient(90deg, #e9f2f9 0%, #ffffff 52%); }
+.pathway-eb1b {
+  border-left-color:
+    #7c6a9b;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f7f4fa 0%,
+      #ffffff 48%
+    );
+}
+
+
+.pathway-eb1b:hover {
+  border-color:
+    rgba(124, 106, 155, 0.58);
+
+  border-left-color:
+    #7c6a9b;
+
+  background:
+    linear-gradient(
+      90deg,
+      #eee8f4 0%,
+      #ffffff 52%
+    );
+}
 .pathway-niw { border-left-color: var(--gold); background: linear-gradient(90deg, #fbf7ee 0%, #ffffff 48%); }
 .pathway-niw:hover { border-color: rgba(198, 161, 91, 0.65); border-left-color: var(--gold); background: linear-gradient(90deg, #f8edcf 0%, #ffffff 52%); }
 .pathway-o1 { border-left-color: #688578; background: linear-gradient(90deg, #f2f7f4 0%, #ffffff 48%); }
