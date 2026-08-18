@@ -2,9 +2,10 @@
 
   <div class="container header-inner">
 
-    <a class="site-brand"
-       href="{{ '/' | relative_url }}"
-       aria-label="ABC Projects Home">
+    <a
+      class="site-brand"
+      href="{{ '/' | relative_url }}"
+      aria-label="ABC Projects Home">
 
       <span class="brand-name">
         <span class="brand-abc">ABC</span> Projects
@@ -36,69 +37,106 @@
       id="main-navigation"
       aria-label="Main navigation">
 
+
+      <!-- HOME -->
+
       <a href="{{ '/' | relative_url }}">
         Home
       </a>
 
 
-      <a href="{{ '/services/' | relative_url }}"
-         {% if page.url contains '/services/' %}
-         class="is-active"
-         aria-current="page"
-         {% endif %}>
+      <!-- SERVICES -->
+
+      <a
+        href="{{ '/services/' | relative_url }}"
+        {% if page.url contains '/services' %}
+        class="is-active"
+        aria-current="page"
+        {% endif %}>
+
         Services
+
       </a>
 
 
-      <a href="{{ '/immigration-support/' | relative_url }}"
-         {% if page.url contains '/immigration-support/' %}
-         class="is-active"
-         aria-current="page"
-         {% endif %}>
+      <!-- IMMIGRATION SUPPORT -->
+
+      <a
+        href="{{ '/immigration-support/' | relative_url }}"
+        {% if page.url contains '/immigration-support' %}
+        class="is-active"
+        aria-current="page"
+        {% endif %}>
+
         EB-1 / NIW / O-1
+
       </a>
 
 
-      <a href="{{ '/past-projects/' | relative_url }}"
-         {% if page.url contains '/past-projects/' %}
-         class="is-active"
-         aria-current="page"
-         {% endif %}>
+      <!-- PAST PROJECTS -->
+
+      <a
+        href="{{ '/past-projects/' | relative_url }}"
+        {% if page.url contains '/past-projects' %}
+        class="is-active"
+        aria-current="page"
+        {% endif %}>
+
         Past Projects
+
       </a>
 
 
-      <a href="{{ '/resources/' | relative_url }}"
-         {% if page.url contains '/resources/' %}
-         class="is-active"
-         aria-current="page"
-         {% endif %}>
+      <!-- RESOURCES -->
+
+      <a
+        href="{{ '/resources/' | relative_url }}"
+        {% if page.url contains '/resources' %}
+        class="is-active"
+        aria-current="page"
+        {% endif %}>
+
         Resources
+
       </a>
 
 
-      <a href="{{ '/about/' | relative_url }}"
-         {% if page.url contains '/about/' %}
-         class="is-active"
-         aria-current="page"
-         {% endif %}>
+      <!-- ABOUT -->
+
+      <a
+        href="{{ '/about/' | relative_url }}"
+        {% if page.url contains '/about' %}
+        class="is-active"
+        aria-current="page"
+        {% endif %}>
+
         About
+
       </a>
 
 
-      <a href="{{ '/contact/' | relative_url }}"
-         {% if page.url contains '/contact/' %}
-         class="is-active"
-         aria-current="page"
-         {% endif %}>
+      <!-- CONTACT -->
+
+      <a
+        href="{{ '/contact/' | relative_url }}"
+        {% if page.url contains '/contact' %}
+        class="is-active"
+        aria-current="page"
+        {% endif %}>
+
         Contact
+
       </a>
 
+
+      <!-- HEADER CTA -->
 
       <a
         class="header-cta"
         href="{{ '/contact/' | relative_url }}">
+
         Book a Free Profile Review
+
       </a>
 
     </nav>
