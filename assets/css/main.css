@@ -819,7 +819,7 @@ p {
     grid;
 
   grid-template-columns:
-    repeat(5, 1fr);
+    repeat(3, 1fr);
 
   gap:
     20px;
@@ -1357,7 +1357,7 @@ p {
 .process-step:not(.process-step-6)::after {
 
   content:
-    "➜";
+    "âžœ";
 
   position:
     absolute;
@@ -1759,7 +1759,7 @@ p {
 .profile-flow-item:not(:last-child)::after {
 
   content:
-    "➜";
+    "âžœ";
 
   position:
     absolute;
@@ -1908,7 +1908,7 @@ p {
     grid;
 
   grid-template-columns:
-    repeat(3, 1fr);
+    repeat(2, 1fr);
 
   gap:
     22px;
@@ -1958,6 +1958,7 @@ p {
     var(--shadow-md);
 
 }
+
 
 
 .immigration-card-featured {
@@ -3197,7 +3198,7 @@ p {
   .process-step:not(.process-step-6)::after {
 
     content:
-      "↓";
+      "â†“";
 
     display:
       block;
@@ -3261,7 +3262,7 @@ p {
   .profile-flow-item:not(:last-child)::after {
 
     content:
-      "↓";
+      "â†“";
 
     top:
       auto;
@@ -3342,7 +3343,7 @@ p {
 }
 
 
-/* Profile Support: three coordinated but distinct cards */
+/* Profile Support: four coordinated but distinct cards */
 .immigration-heading {
   max-width: 850px;
 }
@@ -3360,6 +3361,17 @@ p {
     );
   border-top:
     4px solid #315f83;
+}
+
+.immigration-card-eb1b {
+  background:
+    linear-gradient(
+      145deg,
+      #f7f4fa 0%,
+      #eee8f4 100%
+    );
+  border-top:
+    4px solid #7c6a9b;
 }
 
 .immigration-card-featured {
@@ -3391,6 +3403,11 @@ p {
 .immigration-card-eb1a:hover {
   box-shadow:
     0 12px 30px rgba(49, 95, 131, 0.14);
+}
+
+.immigration-card-eb1b:hover {
+  box-shadow:
+    0 12px 30px rgba(124, 106, 155, 0.15);
 }
 
 .immigration-card-featured:hover {
