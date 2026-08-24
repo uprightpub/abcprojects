@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Contact"
-description: "Start with a quick profile check or request a free 10-minute research profile review from ABC Projects."
+description: "Complete a free research profile evaluation and receive an instant profile score, preliminary immigration-readiness indicators and recommended ABC Projects services."
 custom_css: /assets/css/contact.css
 ---
 
@@ -15,28 +15,28 @@ custom_css: /assets/css/contact.css
     <div class="contact-hero-content">
 
       <span class="contact-eyebrow">
-        Contact &amp; Profile Review
+        Contact &amp; Profile Evaluation
       </span>
 
       <h1>
-        Start With a Quick Research Profile Review
+        Discover the Right Next Step for Your Research Profile
       </h1>
 
       <p class="contact-hero-text">
-        Choose a quick self-assessment or request a free 10-minute profile review
-        to identify the most relevant next step for your scholarly or professional profile.
+        Complete our free 10-minute assessment to receive an instant research-profile score,
+        preliminary immigration-readiness indicators and recommended ABC Projects services.
       </p>
 
       <div class="button-group">
 
         <a class="button button-primary"
-           href="#self-assessment">
-          Start Self-Assessment
+           href="#abc-profile-evaluation">
+          Start Free Profile Evaluation
         </a>
 
         <a class="button button-secondary"
-           href="#profile-review">
-          Book a Free 10-Minute Review
+           href="/services/">
+          Explore Our Services
         </a>
 
       </div>
@@ -47,15 +47,15 @@ custom_css: /assets/css/contact.css
     <div class="contact-hero-panel">
 
       <span class="contact-panel-label">
-        Two Ways to Start
+        What You Will Receive
       </span>
 
       <div class="contact-panel-item">
         <span>01</span>
 
         <div>
-          <strong>Quick Self-Assessment</strong>
-          <small>Identify the support area that may fit your current profile.</small>
+          <strong>Research Profile Score</strong>
+          <small>See your current profile strength across six key areas.</small>
         </div>
       </div>
 
@@ -63,8 +63,17 @@ custom_css: /assets/css/contact.css
         <span>02</span>
 
         <div>
-          <strong>10-Minute Profile Review</strong>
-          <small>Submit a short request for a brief profile-focused discussion.</small>
+          <strong>Preliminary Readiness Indicators</strong>
+          <small>Review possible NIW, EB-1A, EB-1B and O-1 profile indicators.</small>
+        </div>
+      </div>
+
+      <div class="contact-panel-item">
+        <span>03</span>
+
+        <div>
+          <strong>Recommended Services</strong>
+          <small>Identify up to three ABC Projects services relevant to your profile.</small>
         </div>
       </div>
 
@@ -75,419 +84,16 @@ custom_css: /assets/css/contact.css
 
 
 <!-- =========================================================
-     STARTING POINT
+     FREE RESEARCH PROFILE EVALUATION
+     Complete form, live scoring and instant results are loaded
+     from _includes/free-profile-evaluation.html
      ========================================================= -->
 
-<section class="contact-start section">
-  <div class="container">
-
-    <div class="section-heading contact-section-heading">
-
-      <span class="section-eyebrow">
-        Choose Your Starting Point
-      </span>
-
-      <h2>
-        A Simple Way to Understand What You May Need
-      </h2>
-
-      <p>
-        You can either complete a short self-check or send a brief profile review request.
-        No direct phone number or public email address is required.
-      </p>
-
-    </div>
-
-
-    <div class="contact-start-grid">
-
-      <article class="contact-start-card contact-start-assessment">
-
-        <span class="contact-start-code">
-          Option 01
-        </span>
-
-        <h3>
-          Quick Self-Assessment
-        </h3>
-
-        <p>
-          Answer a few short questions about your publications, visibility,
-          citations and professional evidence.
-        </p>
-
-        <a href="#self-assessment">
-          Start Assessment →
-        </a>
-
-      </article>
-
-
-      <article class="contact-start-card contact-start-review">
-
-        <span class="contact-start-code">
-          Option 02
-        </span>
-
-        <h3>
-          Free 10-Minute Profile Review
-        </h3>
-
-        <p>
-          Share your basic profile details and request a short review of your current
-          scholarly or professional record.
-        </p>
-
-        <a href="#profile-review">
-          Request a Review →
-        </a>
-
-      </article>
-
-    </div>
-
-  </div>
-</section>
+{% include free-profile-evaluation.html %}
 
 
 <!-- =========================================================
-     SELF ASSESSMENT
-     ========================================================= -->
-
-<section class="self-assessment section"
-         id="self-assessment">
-
-  <div class="container self-assessment-grid">
-
-    <div class="self-assessment-intro">
-
-      <span class="section-eyebrow">
-        Quick Self-Assessment
-      </span>
-
-      <h2>
-        Check Your Current Research Profile
-      </h2>
-
-      <p>
-        Select the statements that best describe your current situation.
-        This tool is designed only to suggest a possible ABC Projects service area.
-      </p>
-
-      <div class="self-assessment-note">
-        <strong>Note:</strong>
-        This is not an immigration eligibility test, legal assessment or guarantee of outcome.
-      </div>
-
-    </div>
-
-
-    <form class="assessment-form"
-          id="assessment-form">
-
-      <label class="assessment-question">
-        <input type="checkbox"
-               name="profile"
-               value="profile">
-        <span>
-          My publications, citations and scholarly profiles need a structured review.
-        </span>
-      </label>
-
-
-      <label class="assessment-question">
-        <input type="checkbox"
-               name="visibility"
-               value="visibility">
-        <span>
-          My research is published, but my online scholarly visibility is limited or inconsistent.
-        </span>
-      </label>
-
-
-      <label class="assessment-question">
-        <input type="checkbox"
-               name="publication"
-               value="publication">
-        <span>
-          My publication records, DOI information or authorship details need better organization.
-        </span>
-      </label>
-
-
-      <label class="assessment-question">
-        <input type="checkbox"
-               name="citation"
-               value="citation">
-        <span>
-          I need clearer citation, research-impact or scholarly influence documentation.
-        </span>
-      </label>
-
-
-      <label class="assessment-question">
-        <input type="checkbox"
-               name="review"
-               value="review">
-        <span>
-          I have reviewer, editorial, judging or professional activities that need evidence organization.
-        </span>
-      </label>
-
-
-      <label class="assessment-question">
-        <input type="checkbox"
-               name="immigration"
-               value="immigration">
-        <span>
-          I am preparing a research or professional profile that may be reviewed by immigration counsel.
-        </span>
-      </label>
-
-
-      <button class="assessment-submit"
-              type="button"
-              id="assessment-submit">
-        See Recommended Starting Point
-      </button>
-
-
-      <div class="assessment-result"
-           id="assessment-result"
-           aria-live="polite">
-
-        <span class="assessment-result-label">
-          Recommended Starting Point
-        </span>
-
-        <strong id="assessment-result-title">
-          Research Profile Assessment
-        </strong>
-
-        <p id="assessment-result-text">
-          Select one or more statements above to receive a suggested ABC Projects service area.
-        </p>
-
-      </div>
-
-    </form>
-
-  </div>
-</section>
-
-
-<!-- =========================================================
-     10-MINUTE PROFILE REVIEW
-     ========================================================= -->
-
-<section class="profile-review section"
-         id="profile-review">
-
-  <div class="container">
-
-    <div class="section-heading contact-section-heading">
-
-      <span class="section-eyebrow">
-        Free 10-Minute Profile Review
-      </span>
-
-      <h2>
-        Request a Brief Profile-Focused Discussion
-      </h2>
-
-      <p>
-        Provide only the information needed for an initial review. Your message can focus
-        on research visibility, publications, citations, professional evidence or profile development.
-      </p>
-
-    </div>
-
-
-    <div class="profile-review-grid">
-
-      <div class="profile-review-info">
-
-        <div class="profile-review-info-card">
-
-          <span>01</span>
-
-          <div>
-            <strong>Short Review</strong>
-            <small>Focused on the most relevant profile issue</small>
-          </div>
-
-        </div>
-
-
-        <div class="profile-review-info-card">
-
-          <span>02</span>
-
-          <div>
-            <strong>Relevant Next Step</strong>
-            <small>Identify which ABC Projects service may be appropriate</small>
-          </div>
-
-        </div>
-
-
-        <div class="profile-review-info-card">
-
-          <span>03</span>
-
-          <div>
-            <strong>No Public Contact Details Required</strong>
-            <small>Use the form to initiate communication</small>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <form class="profile-review-form"
-            action="#"
-            method="post">
-
-        <div class="form-grid">
-
-          <div class="form-field">
-
-            <label for="contact-name">
-              Name
-            </label>
-
-            <input type="text"
-                   id="contact-name"
-                   name="name"
-                   placeholder="Your name"
-                   required>
-
-          </div>
-
-
-          <div class="form-field">
-
-            <label for="contact-email">
-              Email
-            </label>
-
-            <input type="email"
-                   id="contact-email"
-                   name="email"
-                   placeholder="Your email address"
-                   required>
-
-          </div>
-
-
-          <div class="form-field">
-
-            <label for="contact-role">
-              Current Role / Field
-            </label>
-
-            <input type="text"
-                   id="contact-role"
-                   name="role"
-                   placeholder="Researcher, academic, engineer, physician, etc.">
-
-          </div>
-
-
-          <div class="form-field">
-
-            <label for="contact-profile">
-              Google Scholar / ORCID / Profile Link
-            </label>
-
-            <input type="url"
-                   id="contact-profile"
-                   name="profile_url"
-                   placeholder="Optional profile URL">
-
-          </div>
-
-
-          <div class="form-field form-field-full">
-
-            <label for="contact-topic">
-              Main Review Topic
-            </label>
-
-            <select id="contact-topic"
-                    name="topic">
-
-              <option value="">
-                Select a topic
-              </option>
-
-              <option value="profile-assessment">
-                Research Profile Assessment
-              </option>
-
-              <option value="research-visibility">
-                Research Visibility &amp; Google Scholar
-              </option>
-
-              <option value="publication-support">
-                Publication Support
-              </option>
-
-              <option value="citation-impact">
-                Citations &amp; Research Impact
-              </option>
-
-              <option value="peer-review">
-                Peer Review &amp; Professional Evidence
-              </option>
-
-              <option value="immigration-profile">
-                EB-1 / NIW / O-1 Profile Support
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <div class="form-field form-field-full">
-
-            <label for="contact-message">
-              Short Message
-            </label>
-
-            <textarea id="contact-message"
-                      name="message"
-                      rows="5"
-                      placeholder="Briefly describe what you would like us to review."></textarea>
-
-          </div>
-
-        </div>
-
-
-        <button class="profile-review-submit"
-                type="submit">
-          Submit Profile Review Request
-        </button>
-
-
-        <p class="profile-review-form-note">
-          Submitting this form requests an initial profile review only.
-          It does not create a legal or attorney-client relationship.
-        </p>
-
-      </form>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- =========================================================
-     WHAT THE REVIEW COVERS
+     WHAT THE EVALUATION COVERS
      ========================================================= -->
 
 <section class="review-covers section">
@@ -496,12 +102,17 @@ custom_css: /assets/css/contact.css
     <div class="section-heading contact-section-heading">
 
       <span class="section-eyebrow">
-        What the Review Covers
+        What the Evaluation Covers
       </span>
 
       <h2>
-        A Brief Look at the Most Relevant Profile Areas
+        A Structured Review of the Most Relevant Profile Areas
       </h2>
+
+      <p>
+        The assessment considers the information you provide about your education,
+        research output, scholarly impact, professional activities and online research presence.
+      </p>
 
     </div>
 
@@ -510,36 +121,43 @@ custom_css: /assets/css/contact.css
 
       <article class="review-cover-card">
         <span>01</span>
-        <h3>Profile Structure</h3>
-        <p>How publications and professional records are currently organized.</p>
+        <h3>Education &amp; Experience</h3>
+        <p>Your highest degree, professional field and relevant teaching, research or professional experience.</p>
       </article>
 
 
       <article class="review-cover-card">
         <span>02</span>
-        <h3>Research Visibility</h3>
-        <p>How clearly the researcher and published work can be found online.</p>
+        <h3>Research Publications</h3>
+        <p>Journal articles, books, book chapters, patents and conference publications or presentations.</p>
       </article>
 
 
       <article class="review-cover-card">
         <span>03</span>
-        <h3>Publication &amp; Citation Records</h3>
-        <p>Whether key scholarly records appear consistent and usable.</p>
+        <h3>Citations &amp; Research Impact</h3>
+        <p>Citation records, h-index and documented scholarly, professional or practical influence.</p>
       </article>
 
 
       <article class="review-cover-card">
         <span>04</span>
-        <h3>Evidence Gaps</h3>
-        <p>Professional or academic activities that may need better documentation.</p>
+        <h3>Profiles &amp; Visibility</h3>
+        <p>Google Scholar, ORCID, ResearchGate, Scopus, Web of Science and other professional profiles.</p>
       </article>
 
 
       <article class="review-cover-card">
         <span>05</span>
-        <h3>Recommended Service</h3>
-        <p>The most relevant ABC Projects support area for the current profile.</p>
+        <h3>Professional Evidence</h3>
+        <p>Editorial roles, peer reviews, awards, selective memberships, leadership and original contributions.</p>
+      </article>
+
+
+      <article class="review-cover-card">
+        <span>06</span>
+        <h3>Recommended Support</h3>
+        <p>The ABC Projects services that may best address your present strengths, gaps and professional goals.</p>
       </article>
 
     </div>
@@ -571,90 +189,13 @@ custom_css: /assets/css/contact.css
     <div class="contact-boundary-note">
 
       <p>
-        The free review focuses on research profile, scholarly visibility and evidence
-        organization. ABC Projects does not provide immigration legal advice,
-        determine legal eligibility or file immigration petitions.
+        This automated evaluation is based solely on the information submitted by the visitor.
+        It provides preliminary research-profile guidance and service recommendations only.
+        ABC Projects does not provide immigration legal advice, determine legal eligibility,
+        create an attorney-client relationship or guarantee the outcome of any petition.
       </p>
 
     </div>
 
   </div>
 </section>
-
-
-<!-- =========================================================
-     SELF-ASSESSMENT SCRIPT
-     ========================================================= -->
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const button = document.getElementById("assessment-submit");
-  const resultTitle = document.getElementById("assessment-result-title");
-  const resultText = document.getElementById("assessment-result-text");
-
-  if (!button || !resultTitle || !resultText) {
-    return;
-  }
-
-  button.addEventListener("click", function () {
-
-    const checked = Array.from(
-      document.querySelectorAll("#assessment-form input[type='checkbox']:checked")
-    ).map(function (item) {
-      return item.value;
-    });
-
-    let title = "Research Profile Assessment";
-    let text =
-      "A structured profile assessment is the best starting point when several areas need review.";
-
-    if (checked.length === 0) {
-      title = "Research Profile Assessment";
-      text =
-        "Select one or more statements above to receive a suggested ABC Projects service area.";
-    }
-
-    else if (checked.includes("immigration")) {
-      title = "Immigration Profile Support";
-      text =
-        "Your answers suggest starting with research-profile and evidence documentation support for attorney-led EB-1A, EB-1B, EB-2 NIW or O-1 preparation.";
-    }
-
-    else if (checked.includes("review")) {
-      title = "Peer Review & Professional Evidence";
-      text =
-        "Your answers suggest focusing on reviewer, editorial, judging or professional evidence documentation.";
-    }
-
-    else if (checked.includes("citation")) {
-      title = "Citations & Research Impact Support";
-      text =
-        "Your answers suggest focusing on citation records, independent scholarly use and research-impact documentation.";
-    }
-
-    else if (checked.includes("publication")) {
-      title = "Publication Support";
-      text =
-        "Your answers suggest reviewing publication records, DOI information, authorship consistency and related documentation.";
-    }
-
-    else if (checked.includes("visibility")) {
-      title = "Research Visibility & Google Scholar";
-      text =
-        "Your answers suggest improving scholarly discoverability, researcher identity and visibility across academic platforms.";
-    }
-
-    else if (checked.includes("profile")) {
-      title = "Research Profile Assessment";
-      text =
-        "Your answers suggest beginning with a structured review of publications, citations, scholarly identities and professional records.";
-    }
-
-    resultTitle.textContent = title;
-    resultText.textContent = text;
-
-  });
-
-});
-</script>
