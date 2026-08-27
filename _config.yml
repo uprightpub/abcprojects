@@ -1,16 +1,25 @@
 title: "ABC Projects"
 tagline: "Research Profile & Evidence Support"
 description: "ABC Projects provides research profile development, scholarly visibility, publication support, research impact, peer-review evidence, and professional evidence documentation."
-
-# Development URL
-# We will change these when abcprojects.org is connected.
 url: "https://abcprojects.org"
 baseurl: ""
+logo: "/assets/images/ap-icon.png"
+social_image: "/assets/images/abcprojects-hero.png"
 
 lang: "en"
 timezone: "Asia/Dhaka"
 
 markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/images/abcprojects-hero.png
 
 exclude:
   - README.md
