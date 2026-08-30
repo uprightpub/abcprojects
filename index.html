@@ -52,13 +52,19 @@ image_alt: "ABC Projects research profile development and scholarly evidence sup
 
     <div class="hero-visual">
 
-      <img
-        src="{{ '/assets/images/abcprojects-hero.png' | relative_url }}"
-        alt="Research profile development, publications, citations, peer review and evidence portfolio support"
-        width="1254"
-        height="1254"
-        fetchpriority="high"
-        decoding="async">
+      <picture>
+        <source
+          srcset="{{ '/assets/images/abcprojects-hero.webp' | relative_url }}"
+          type="image/webp">
+
+        <img
+          src="{{ '/assets/images/abcprojects-hero.png' | relative_url }}"
+          alt="Research profile development, publications, citations, peer review and evidence portfolio support"
+          width="1254"
+          height="1254"
+          fetchpriority="high"
+          decoding="async">
+      </picture>
 
     </div>
 
@@ -1169,6 +1175,8 @@ image_alt: "ABC Projects research profile development and scholarly evidence sup
           <img
             src="{{ '/assets/images/research-invisibility.png' | relative_url }}"
             alt="Why Most Research Papers Remain Invisible After Publication"
+            width="1000"
+            height="667"
             loading="lazy">
 
         </a>
@@ -1192,7 +1200,8 @@ image_alt: "ABC Projects research profile development and scholarly evidence sup
             class="insight-read-link"
             href="https://medium.com/p/98e60710fbfd/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            aria-label="Read Why Most Research Papers Remain Invisible After Publication on Medium">
             Read on Medium →
           </a>
 
@@ -1213,6 +1222,8 @@ image_alt: "ABC Projects research profile development and scholarly evidence sup
           <img
             src="{{ '/assets/images/google-scholar-not-enough.png' | relative_url }}"
             alt="Google Scholar Is Not Enough: Building a Complete Academic Presence Online"
+            width="1000"
+            height="667"
             loading="lazy">
 
         </a>
@@ -1236,7 +1247,8 @@ image_alt: "ABC Projects research profile development and scholarly evidence sup
             class="insight-read-link"
             href="https://medium.com/p/448b720ee71f/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            aria-label="Read Google Scholar Is Not Enough on Medium">
             Read on Medium →
           </a>
 
@@ -1257,6 +1269,8 @@ image_alt: "ABC Projects research profile development and scholarly evidence sup
           <img
             src="{{ '/assets/images/visibility-vs-impact.png' | relative_url }}"
             alt="Research Visibility vs. Research Impact: Understanding the Difference"
+            width="1000"
+            height="667"
             loading="lazy">
 
         </a>
@@ -1280,7 +1294,8 @@ image_alt: "ABC Projects research profile development and scholarly evidence sup
             class="insight-read-link"
             href="https://medium.com/p/a985c720f97d/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            aria-label="Read Research Visibility vs. Research Impact on Medium">
             Read on Medium →
           </a>
 
