@@ -50,11 +50,12 @@ custom_css: /assets/css/contact.css
 </script>
 
 <style>
-.review-covers .contact-section-heading{max-width:780px;margin-bottom:24px}.review-covers .contact-section-heading h2{font-size:clamp(28px,3.2vw,42px);line-height:1.12}.review-covers-grid{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important;align-items:end;margin-top:20px}.review-cover-card{min-height:158px!important;padding:17px 15px!important;border-radius:13px!important;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}.review-cover-card:nth-child(1){transform:translateY(25px)}.review-cover-card:nth-child(2){transform:translateY(20px)}.review-cover-card:nth-child(3){transform:translateY(15px)}.review-cover-card:nth-child(4){transform:translateY(10px)}.review-cover-card:nth-child(5){transform:translateY(5px)}.review-cover-card:nth-child(6){transform:translateY(0);border-color:#78b9a8!important;background:linear-gradient(145deg,#f0faf6,#eef6fb)!important}.review-cover-card:hover{transform:translateY(-4px)!important;border-color:#5c9fbd!important;box-shadow:0 13px 28px rgba(25,67,96,.13)!important}.review-cover-card span{font-size:12px!important}.review-cover-card h3{margin:13px 0 7px!important;font-size:16px!important;line-height:1.22}.review-cover-card p{margin:0!important;font-size:12px!important;line-height:1.48}.review-cover-card:nth-child(6) h3{color:#08705a!important}
+.review-covers .contact-section-heading{max-width:780px;margin-bottom:24px}.review-covers .contact-section-heading h2{font-size:clamp(28px,3.2vw,42px);line-height:1.12}.review-covers-grid{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:10px!important;align-items:end;margin-top:20px}.review-cover-card{min-height:158px!important;padding:17px 15px!important;border-radius:13px!important;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}.review-cover-card:nth-child(1){transform:translateY(25px)}.review-cover-card:nth-child(2){transform:translateY(20px)}.review-cover-card:nth-child(3){transform:translateY(15px)}.review-cover-card:nth-child(4){transform:translateY(10px)}.review-cover-card:nth-child(5){transform:translateY(5px)}.review-cover-card:nth-child(6){transform:translateY(0);border-color:#78b9a8!important;background:linear-gradient(145deg,#f0faf6,#eef6fb)!important}.review-cover-card:hover{transform:translateY(-4px)!important;border-color:#5c9fbd!important;box-shadow:0 13px 28px rgba(25,67,96,.13)!important}.review-cover-card span{font-size:12px!important}.review-cover-card h3{margin:13px 0 7px!important;font-size:16px!important;line-height:1.22}.review-cover-card p{margin:0!important;font-size:12px!important;line-height:1.48}.review-cover-card:nth-child(6) h3{color:#08705a!important}.contact-hero-actions{display:flex;flex-wrap:wrap;gap:12px}
 @media(max-width:1100px){.review-covers-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.review-cover-card{transform:none!important;min-height:145px!important}}
-@media(max-width:680px){.review-covers-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.review-cover-card{min-height:138px!important}}
-@media(max-width:430px){.review-covers-grid{grid-template-columns:1fr!important}.review-cover-card{min-height:0!important}}
+@media(max-width:680px){.review-covers-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.review-cover-card{min-height:138px!important}.contact-hero-actions{gap:10px}}
+@media(max-width:430px){.review-covers-grid{grid-template-columns:1fr!important}.review-cover-card{min-height:0!important}.contact-hero-actions{display:grid}.contact-hero-actions .button{width:100%;text-align:center}}
 </style>
+
 
 <!-- =========================================================
      CONTACT HERO
@@ -78,7 +79,7 @@ custom_css: /assets/css/contact.css
         preliminary immigration-readiness indicators and recommended ABC Projects services.
       </p>
 
-      <div class="button-group">
+      <div class="button-group contact-hero-actions">
 
         <a class="button button-primary"
            href="#abc-profile-evaluation">
@@ -86,8 +87,13 @@ custom_css: /assets/css/contact.css
         </a>
 
         <a class="button button-secondary"
-           href="/services/">
+           href="{{ '/services/' | relative_url }}">
           Explore Our Services
+        </a>
+
+        <a class="button button-secondary"
+           href="{{ '/resources/research-profile-checklist/' | relative_url }}">
+          View Profile Checklist
         </a>
 
       </div>
