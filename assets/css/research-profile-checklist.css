@@ -1,0 +1,65 @@
+/* =========================================================
+   RESEARCH PROFILE & SCHOLARLY VISIBILITY CHECKLIST
+   Page-specific screen styles
+   ========================================================= */
+
+.checklist-introduction { padding: 4.5rem 0; background: #ffffff; }
+
+.checklist-introduction .resources-section-heading { max-width: 920px; margin: 0 auto; text-align: center; }
+
+.checklist-introduction .resources-section-heading p { max-width: 850px; margin-left: auto; margin-right: auto; }
+
+.checklist-compact-section { padding: 5.5rem 0; background: #f7fafc; }
+
+.checklist-compact-heading { max-width: 850px; margin: 0 auto 2.5rem; text-align: center; }
+
+.checklist-compact-heading h2 { margin: 0 0 1rem; color: #173451; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.15; }
+
+.checklist-compact-heading p { margin: 0; color: #64748b; font-size: 1.05rem; line-height: 1.75; }
+
+.checklist-compact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: stretch; }
+
+.checklist-compact-card { display: flex; flex-direction: column; padding: 1.6rem; background: #ffffff; border: 1px solid #dce5ed; border-radius: 18px; box-shadow: 0 12px 30px rgba(20, 52, 81, 0.06); transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+
+.checklist-compact-card:hover { transform: translateY(-4px); border-color: #d2aa5b; box-shadow: 0 18px 38px rgba(20, 52, 81, 0.11); }
+
+.checklist-compact-card-header { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 1rem; align-items: start; margin-bottom: 1.25rem; }
+
+.checklist-compact-number { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; color: #ffffff; background: #173451; border-radius: 50%; font-size: 0.85rem; font-weight: 800; }
+
+.checklist-compact-label { display: block; margin-bottom: 0.3rem; color: #bf9344; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+
+.checklist-compact-card h3 { margin: 0 0 0.45rem; color: #173451; font-size: 1.28rem; line-height: 1.3; }
+
+.checklist-compact-summary { margin: 0; color: #64748b; font-size: 0.93rem; line-height: 1.55; }
+
+.checklist-compact-items { display: grid; gap: 0.7rem; margin: auto 0 0; padding: 0; list-style: none; }
+
+.checklist-compact-item { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 0.75rem; align-items: start; padding: 0.85rem; background: #f8fafc; border: 1px solid #e4ebf1; border-radius: 11px; }
+
+.checklist-compact-box { color: #bf9344; font-size: 1rem; font-weight: 800; line-height: 1.3; }
+
+.checklist-compact-item strong { display: block; margin-bottom: 0.15rem; color: #173451; font-size: 0.94rem; line-height: 1.35; }
+
+.checklist-compact-item small { display: block; color: #64748b; font-size: 0.82rem; line-height: 1.45; }
+
+.checklist-maintenance { padding-top: 5rem; padding-bottom: 5rem; }
+
+@media (max-width: 900px) {
+  .checklist-introduction { padding: 3.75rem 0; }
+  .checklist-compact-section { padding: 4rem 0; }
+  .checklist-compact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .checklist-introduction { padding: 3rem 0; }
+  .checklist-introduction .resources-section-heading { text-align: left; }
+  .checklist-compact-section { padding: 3rem 0; }
+  .checklist-compact-heading { margin-bottom: 1.75rem; text-align: left; }
+  .checklist-compact-card { padding: 1.15rem; border-radius: 14px; }
+  .checklist-compact-card-header { grid-template-columns: 44px minmax(0, 1fr); gap: 0.75rem; }
+  .checklist-compact-number { width: 44px; height: 44px; font-size: 0.76rem; }
+  .checklist-compact-card h3 { font-size: 1.12rem; }
+  .checklist-compact-item { padding: 0.75rem; }
+  .checklist-maintenance { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+}
